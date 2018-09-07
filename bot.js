@@ -21,6 +21,34 @@ client.user.setStatus("dnd")
 });
 
 
+    client.on('message' , message => {
+    if (message.content === '+help') {
+             let embed = new Discord.RichEmbed()
+
+          .setThumbnail(message.author.avatarURL)
+          .addField("**🌐 الأوامر العامه**","** **")
+          .addField("**+Soon**","**عرض صورتك الشخصية**")
+          .addField("**+Soon**","**عرض جميع معلومات السيرفر**")
+           .addField("**+Soon**","**عرض معلومات عنك**")
+       .addField("**+help**","**ارسال هذه الأوامر للعضو في الخاص**")
+       .addField("**+ping**","** عرض سرعة اتصال البوت**")
+    .setColor('RANDOM')
+      message.author.sendEmbed(embed);
+        }
+    });
+
+
+    client.on('message', message => {
+                if (message.content.startsWith("!help")) {
+         let embed = new Discord.RichEmbed()
+    .setThumbnail(message.author.avatarURL)
+    .addField('     Help ' ,' تم ارسال الاوامر الي الخاص ✉  ')
+    .setColor('#B101FC')
+      message.channel.sendEmbed(embed);
+        }
+    });
+
+
 
 
 
