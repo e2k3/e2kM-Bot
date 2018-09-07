@@ -16,7 +16,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : e2k ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Speical4Ever I .help`,"http://twitch.tv/S-F")
+client.user.setGame(`e2kM`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
 
@@ -25,7 +25,7 @@ client.user.setStatus("dnd")
 
 
 client.on("message", message => {
-      if (message.content === "ping") {
+      if (message.content === "+ping") {
         const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
     .setTitle('**Pong ! **')
