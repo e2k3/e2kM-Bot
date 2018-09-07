@@ -9,6 +9,18 @@ client.on('ready', () => {
 
 
 
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : e2k`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : e2k ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`Speical4Ever I .help`,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
+});
+
+
 
 
 
