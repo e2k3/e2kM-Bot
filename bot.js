@@ -36,8 +36,6 @@ client.user.setStatus("dnd")
       message.author.sendEmbed(embed);
         }
     });
-
-
     client.on('message', message => {
                 if (message.content.startsWith("!help")) {
          let embed = new Discord.RichEmbed()
