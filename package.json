@@ -1,0 +1,9 @@
+client.on("message", message => {
+  if (message.content === ".Bping") {
+    const embed = new Discord.RichEmbed()
+.setColor("RANDOM")
+.setTitle('**Pong ! **')
+.addField('**`»‰ﬁ «·»Ê `**' , `${Date.now() - message.createdTimestamp}` + ' `ms`')
+message.channel.sendEmbed(embed);
+}
+});
