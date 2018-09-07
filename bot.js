@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "e2k.";
+const prefix = "+";
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -13,7 +13,7 @@ client.on('ready', () => {
 
 
 client.on("message", message => {
-      if (message.content === ".ping") {
+      if (message.content === "ping") {
         const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
     .setTitle('**Pong ! **')
