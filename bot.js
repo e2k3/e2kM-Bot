@@ -75,7 +75,7 @@ client.on("ready", () => {
     });
     client.user.setGame("HerpoPlex Community©", "https://twitch.tv/©%22);
 });
-(edited)
+
 
 
 
