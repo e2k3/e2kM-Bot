@@ -61,7 +61,7 @@ client.on('voiceStateUpdate', (o,n) => {
     };
     if (n.voiceChannel && !o.voiceChannel) {
         ss+=1
-        n.guild.channels.get("أيدي الروم").edit({
+        n.guild.channels.get("487511545002328079").edit({
             name : "Voice Online : [" + ss+ "]"
         })
     }
