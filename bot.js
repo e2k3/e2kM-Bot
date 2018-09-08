@@ -50,7 +50,7 @@ client.user.setStatus("dnd")
 
 client.on('message', message => {
               if (!message.channel.guild) return;
-      if(message.content =='+Speicals')
+      if(message.content =='+mem')
       var kayan = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
       .setFooter(message.author.username, message.author.avatarURL) 
