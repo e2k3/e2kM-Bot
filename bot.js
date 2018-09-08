@@ -50,6 +50,38 @@ client.user.setStatus("dnd")
 
 
 
+var ss = 0;
+
+client.on('voiceStateUpdate', (o,n) => {
+    if (o.voiceChannel && !n.voiceChannel) {
+        ss-=1
+        n.guild.channels.get("487511545002328079").edit({
+            name : "Voice Online : [" + ss+ "]"
+        })
+    };
+    if (n.voiceChannel && !o.voiceChannel) {
+        ss+=1
+        n.guild.channels.get("أيدي الروم").edit({
+            name : "Voice Online : [" + ss+ "]"
+        })
+    }
+})
+client.on("ready", () => {
+    client.guilds.get("487511545002328079").members.forEach(m => {
+        if (m.voiceChannel) {
+            ss+=1
+        };
+        client.channels.get("487511545002328079").edit({
+            name : "Voice Online : [" + ss+ "]"
+        })
+    });
+    client.user.setGame("HerpoPlex Community©", "https://twitch.tv/©%22);
+});
+
+
+
+
+
 client.on("message", message => {
       if (message.content === "+ping") {
         const embed = new Discord.RichEmbed()
